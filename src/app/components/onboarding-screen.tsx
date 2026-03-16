@@ -165,15 +165,15 @@ export function OnboardingScreen() {
         >
           <div className="flex justify-center mb-5">
             <div
-              className="w-[88px] h-[88px] rounded-[20px] overflow-hidden"
+              className="w-[100px] h-[100px] rounded-[22px] overflow-hidden bg-black flex items-center justify-center"
               style={{
-                boxShadow: "0 8px 24px rgba(99,102,241,0.2)",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
               }}
             >
               <img
                 src={alfredLogo}
                 alt="Alfred"
-                className="w-full h-full object-contain"
+                className="w-[80px] h-[80px] object-contain"
               />
             </div>
           </div>

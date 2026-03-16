@@ -58,9 +58,9 @@ export function LaunchScreen() {
         <img
           src={alfredLogo}
           alt="Alfred"
-          className="w-20 h-20 rounded-[18px] object-contain"
+          className="w-24 h-24 rounded-[22px] object-contain bg-black p-2"
           style={{
-            boxShadow: "0 8px 32px rgba(99,102,241,0.2), 0 2px 8px rgba(0,0,0,0.1)",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.15)",
           }}
         />
         <div className="text-center">

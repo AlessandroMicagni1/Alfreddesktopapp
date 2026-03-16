@@ -20,7 +20,7 @@ export function HomePage() {
           </p>
         </div>
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#6366f1]/[0.06] text-[#6366f1]">
-          <img src={alfredLogo} alt="Alfred" className="w-5 h-5 rounded-[4px] object-contain" />
+          <img src={alfredLogo} alt="Alfred" className="w-5 h-5 rounded-[4px] object-contain p-px bg-black" />
           <span className="text-[12px]" style={{ fontWeight: 500 }}>Alfred is up to date</span>
         </div>
       </div>

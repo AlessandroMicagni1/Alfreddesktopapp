@@ -42,11 +42,13 @@ export function Sidebar() {
     <aside className="w-[220px] h-full border-r border-border bg-[var(--app-sidebar-bg)] flex flex-col shrink-0">
       {/* Logo */}
       <div className="px-4 pt-4 pb-3 flex items-center gap-2.5">
-        <img
-          src={alfredLogo}
-          alt="Alfred"
-          className="w-10 h-10 rounded-[10px] object-contain"
-        />
+        <div className="w-10 h-10 rounded-[10px] bg-black flex items-center justify-center overflow-hidden shrink-0">
+          <img
+            src={alfredLogo}
+            alt="Alfred"
+            className="w-9 h-9 object-contain"
+          />
+        </div>
         <span className="text-[15px] tracking-[-0.01em]" style={{ fontWeight: 600 }}>
           Alfred
         </span>
@@ -97,7 +99,7 @@ export function Sidebar() {
       <div className="px-2.5 pb-3">
         <div className="rounded-lg border border-border bg-card p-3">
           <div className="flex items-center gap-2 mb-1.5">
-            <img src={alfredLogo} alt="Alfred" className="w-5 h-5 rounded-[4px] object-contain" />
+            <img src={alfredLogo} alt="Alfred" className="w-5 h-5 rounded-[4px] object-contain p-px bg-black" />
             <span className="text-[12px]" style={{ fontWeight: 500 }}>Alfred Pro</span>
           </div>
           <p className="text-[11px] text-muted-foreground leading-[1.4]">

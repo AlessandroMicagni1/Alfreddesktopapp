@@ -1,11 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#6366f1"/>
-      <stop offset="100%" stop-color="#818cf8"/>
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
-  <path d="M256 120L153 392h53l22-60h56l22 60h53L256 120zm-15 170l15-42 15 42h-30z" fill="white" fill-opacity="0.95"/>
-  <circle cx="256" cy="155" r="14" fill="white" fill-opacity="0.6"/>
+  <rect width="512" height="512" rx="112" fill="#000000"/>
+  <g transform="translate(80, 60) scale(2.05)">
+    <path d="M90 20 C85 20, 55 85, 40 130 C38 136, 35 140, 30 140 L20 140 C15 140, 12 136, 14 130 L70 10 C73 3, 78 0, 85 0 L95 0 C102 0, 107 3, 110 10 L148 95 C148 95, 140 90, 130 90 C125 90, 120 92, 116 96 L90 20z" fill="white" fill-opacity="0.95"/>
+    <path d="M48 110 C55 100, 75 95, 95 95 C100 95, 105 96, 108 98" stroke="white" stroke-opacity="0.95" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <circle cx="130" cy="120" r="22" stroke="white" stroke-opacity="0.95" stroke-width="10" fill="none"/>
+    <line x1="147" y1="137" x2="165" y2="155" stroke="white" stroke-opacity="0.95" stroke-width="10" stroke-linecap="round"/>
+  </g>
 </svg>
