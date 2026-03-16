@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router";
-import { DesktopScreen } from "./components/desktop-screen";
+import { AppRedirect } from "./components/app-redirect";
 import { LaunchScreen } from "./components/launch-screen";
 import { OnboardingScreen } from "./components/onboarding-screen";
 import { Layout } from "./components/layout";
@@ -13,7 +13,7 @@ import { SettingsPage } from "./components/settings-page";
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: DesktopScreen,
+    Component: AppRedirect,
   },
   {
     path: "/launch",
