@@ -5,7 +5,7 @@ import { MessagesCard } from "./messages-card";
 import { NotesCard } from "./notes-card";
 import { QuickActions } from "./quick-actions";
 import { Sparkles } from "lucide-react";
-import alfredLogo from "figma:asset/77695bebd8453aaf1b38066556539bdfe08c63ae.png";
+import alfredLogo from "../assets/alfred-logo";
 
 export function HomePage() {
   return (

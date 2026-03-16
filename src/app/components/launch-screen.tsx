@@ -16,7 +16,7 @@ import {
   Volume2,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import alfredLogo from "figma:asset/77695bebd8453aaf1b38066556539bdfe08c63ae.png";
+import alfredLogo from "../assets/alfred-logo";
 
 const WALLPAPER_URL =
   "https://images.unsplash.com/photo-1758637612226-97ceebff95a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsJTIwYWJzdHJhY3QlMjBncmFkaWVudCUyMGNhbG0lMjBkZXNrdG9wJTIwd2FsbHBhcGVyfGVufDF8fHx8MTc3MzY1NjQ0NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";

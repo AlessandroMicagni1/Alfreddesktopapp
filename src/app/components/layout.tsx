@@ -19,7 +19,7 @@ import {
   PhotosIcon,
   SettingsIcon,
 } from "./dock-icons";
-import alfredLogo from "figma:asset/77695bebd8453aaf1b38066556539bdfe08c63ae.png";
+import alfredLogo from "../assets/alfred-logo";
 
 /* ── macOS-style Dock Icon Components ────────────── */
 

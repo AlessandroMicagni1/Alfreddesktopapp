@@ -10,7 +10,7 @@ import {
   FolderOpen,
 } from "lucide-react";
 import { useNavigate, useLocation } from "react-router";
-import alfredLogo from "figma:asset/77695bebd8453aaf1b38066556539bdfe08c63ae.png";
+import alfredLogo from "../assets/alfred-logo";
 
 const navItems = [
   { icon: Home, label: "Home", path: "/app" },

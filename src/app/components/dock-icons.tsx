@@ -1,6 +1,6 @@
 /* ── macOS-style Dock Icon SVG Components ────────── */
 
-import alfredLogo from "figma:asset/77695bebd8453aaf1b38066556539bdfe08c63ae.png";
+import alfredLogo from "../assets/alfred-logo";
 
 export function AlfredIcon() {
   return (
