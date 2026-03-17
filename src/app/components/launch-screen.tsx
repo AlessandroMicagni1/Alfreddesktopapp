@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import { motion } from "motion/react";
 import alfredLogo from "../assets/alfred-logo";
-import { LOGO_FALLBACK } from "../assets/alfred-logo";
 
 const loadingSteps = [
   { label: "Connecting to your workspace", delay: 0 },
@@ -63,7 +62,6 @@ export function LaunchScreen() {
           style={{
             boxShadow: "0 8px 32px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.15)",
           }}
-          onError={(e) => { (e.target as HTMLImageElement).src = LOGO_FALLBACK; }}
         />
         <div className="text-center">
           <h1 className="text-[22px] text-[var(--t1)]" style={{ fontWeight: 600 }}>

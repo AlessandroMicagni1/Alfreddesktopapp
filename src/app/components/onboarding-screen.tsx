@@ -20,7 +20,6 @@ import {
   ListTodo,
 } from "lucide-react";
 import alfredLogo from "../assets/alfred-logo";
-import { LOGO_FALLBACK } from "../assets/alfred-logo";
 
 type IntegrationStatus = "disconnected" | "connecting" | "connected";
 
@@ -175,7 +174,6 @@ export function OnboardingScreen() {
                 src={alfredLogo}
                 alt="Alfred"
                 className="w-[80px] h-[80px] object-contain"
-                onError={(e) => { (e.target as HTMLImageElement).src = LOGO_FALLBACK; }}
               />
             </div>
           </div>

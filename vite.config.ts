@@ -98,15 +98,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  build: {
-    rollupOptions: {
-      // Externalize figma:asset imports so production builds don't fail.
-      // These assets only resolve inside Figma Make's platform; in production,
-      // components fall back to /alfred-icon.svg via onError handlers.
-      external: (id) => id.startsWith('figma:asset'),
-    },
-  },
-
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
