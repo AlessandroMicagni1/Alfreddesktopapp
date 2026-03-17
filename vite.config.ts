@@ -3,6 +3,28 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import type { Plugin } from 'vite'
+
+// Custom plugin: resolves figma:asset/* imports to the public fallback icon
+// during production builds. In Figma Make's dev environment, the platform's
+// own resolver handles these imports natively—this plugin is a no-op there.
+function figmaAssetFallback(): Plugin {
+  return {
+    name: 'figma-asset-fallback',
+    enforce: 'pre',
+    resolveId(source) {
+      if (source.startsWith('figma:asset')) {
+        // Resolve to a virtual module that exports the public fallback path
+        return '\0figma-asset-fallback'
+      }
+    },
+    load(id) {
+      if (id === '\0figma-asset-fallback') {
+        return 'export default "/alfred-icon.svg";'
+      }
+    },
+  }
+}
 
 export default defineConfig({
   plugins: [
@@ -10,6 +32,7 @@ export default defineConfig({
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
+    figmaAssetFallback(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'alfred-icon.svg', 'alfred-maskable.svg'],
