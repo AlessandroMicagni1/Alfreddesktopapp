@@ -35,6 +35,7 @@ import {
   FileText,
 } from "lucide-react";
 import alfredLogo from "../assets/alfred-logo";
+import { LOGO_FALLBACK } from "../assets/alfred-logo";
 import { PWAInstallButton } from "./pwa-install-prompt";
 
 /* ── Types ───────────────────────────────────────── */
@@ -520,7 +521,7 @@ export function SettingsPage() {
               <div className="rounded-xl border border-[#6366f1]/20 bg-gradient-to-br from-[#6366f1]/[0.04] to-[#818cf8]/[0.02] p-5 mb-5">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <img src={alfredLogo} alt="Alfred" className="w-6 h-6 rounded-[5px] object-contain p-px bg-black" />
+                    <img src={alfredLogo} alt="Alfred" className="w-6 h-6 rounded-[5px] object-contain p-px bg-black" onError={(e) => { (e.target as HTMLImageElement).src = LOGO_FALLBACK; }} />
                     <span className="text-[14px] text-[#1a1a2e]" style={{ fontWeight: 600 }}>Alfred Pro</span>
                   </div>
                   <span className="px-2.5 py-1 rounded-full bg-[#6366f1]/10 text-[#6366f1] text-[11px]" style={{ fontWeight: 500 }}>

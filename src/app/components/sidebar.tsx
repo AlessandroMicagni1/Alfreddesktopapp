@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useNavigate, useLocation } from "react-router";
 import alfredLogo from "../assets/alfred-logo";
+import { LOGO_FALLBACK } from "../assets/alfred-logo";
 
 const navItems = [
   { icon: Home, label: "Home", path: "/app" },
@@ -47,6 +48,7 @@ export function Sidebar() {
             src={alfredLogo}
             alt="Alfred"
             className="w-9 h-9 object-contain"
+            onError={(e) => { (e.target as HTMLImageElement).src = LOGO_FALLBACK; }}
           />
         </div>
         <span className="text-[15px] tracking-[-0.01em]" style={{ fontWeight: 600 }}>
@@ -99,7 +101,7 @@ export function Sidebar() {
       <div className="px-2.5 pb-3">
         <div className="rounded-lg border border-border bg-card p-3">
           <div className="flex items-center gap-2 mb-1.5">
-            <img src={alfredLogo} alt="Alfred" className="w-5 h-5 rounded-[4px] object-contain p-px bg-black" />
+            <img src={alfredLogo} alt="Alfred" className="w-5 h-5 rounded-[4px] object-contain p-px bg-black" onError={(e) => { (e.target as HTMLImageElement).src = LOGO_FALLBACK; }} />
             <span className="text-[12px]" style={{ fontWeight: 500 }}>Alfred Pro</span>
           </div>
           <p className="text-[11px] text-muted-foreground leading-[1.4]">
