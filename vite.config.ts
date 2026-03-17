@@ -12,6 +12,7 @@ function figmaAssetFallback(): Plugin {
   return {
     name: 'figma-asset-fallback',
     enforce: 'pre',
+    apply: 'build',
     resolveId(source) {
       if (source.startsWith('figma:asset')) {
         // Resolve to a virtual module that exports the public fallback path
